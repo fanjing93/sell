@@ -27,6 +27,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'space-before-function-paren': 0,
     'indent': 0,
-    'semi': ['error', 'always']
+    // 'semi': ['error', 'always'] // 强制加逗号
   }
 }
