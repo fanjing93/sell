@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-header></v-header>
-    <div class="tab">
+    <div class="tab border-1px">
       <router-link class="tab-item" to="/goods" active-class="active">商品</router-link>
       <router-link class="tab-item" to="ratings" active-class="active">评论</router-link>
       <router-link class="tab-item" to="/seller" active-class="active">商家</router-link>
@@ -23,7 +23,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   @import './common/stylus/mixin'
 
   #app
