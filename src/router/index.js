@@ -10,6 +10,10 @@ export default new VueRouter({
   mode: 'history',
   routes: [
     {
+      path: '/',
+      component: ratings
+    },
+    {
       path: '/goods',
       component: goods
     },
@@ -20,6 +24,10 @@ export default new VueRouter({
     {
       path: '/ratings',
       component: ratings
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ]
 })
