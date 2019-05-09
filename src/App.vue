@@ -24,13 +24,15 @@
 </script>
 
 <style lang="stylus">
+  @import './common/stylus/mixin'
+
   #app
     .tab
       display: flex
       width: 100%
       height: 40px
       align-items: center
-
+      border-1px(rgba(7,17,27,0.1))
       &-item
         display: flex
         align-items: center
