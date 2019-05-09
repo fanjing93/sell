@@ -7,7 +7,7 @@
 
   export default {
     name: 'App'
-  }
+  };
 </script>
 
 <style lang="stylus">
