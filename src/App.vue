@@ -2,9 +2,9 @@
   <div id="app">
     <v-header></v-header>
     <div class="tab">
-      <router-link class="tab-item" to="/goods">商品</router-link>
-      <router-link class="tab-item" to="ratings">评论</router-link>
-      <router-link class="tab-item" to="/seller">商家</router-link>
+      <router-link class="tab-item" to="/goods" active-class="active">商品</router-link>
+      <router-link class="tab-item" to="ratings" active-class="active">评论</router-link>
+      <router-link class="tab-item" to="/seller" active-class="active">商家</router-link>
     </div>
     <div class="content">
       <router-view></router-view>
@@ -30,7 +30,16 @@
       width: 100%
       height: 40px
       align-items: center
+
       &-item
-        flex:1
-        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        flex: 1
+        height: 100%
+        font-size: 14px
+        color: rgba(77, 85, 93, 1)
+
+        &.active
+          color: rgb(240, 20, 20)
 </style>
