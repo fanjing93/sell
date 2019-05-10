@@ -19,7 +19,7 @@
   export default {
     name: 'App',
     created () {
-
+      this._getSeller()
     },
     methods: {
       async _getSeller () {

@@ -23,7 +23,7 @@ const ratings = appData.ratings
 
 Router.get('/seller', (req, res, next) => {
   res.json({
-    code: 200,
+    code: 0,
     msg: 'success',
     data: seller
   })
@@ -31,7 +31,7 @@ Router.get('/seller', (req, res, next) => {
 
 Router.get('/goods', (req, res, next) => {
   res.json({
-    code: 200,
+    code: 0,
     msg: 'success',
     data: goods
   })
@@ -39,7 +39,7 @@ Router.get('/goods', (req, res, next) => {
 
 Router.get('/ratings', (req, res, next) => {
   res.json({
-    code: 200,
+    code: 0,
     msg: 'success',
     data: ratings
   })
