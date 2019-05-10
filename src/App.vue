@@ -14,9 +14,19 @@
 
 <script>
   import vHeader from '@/components/header'
+  import {getSeller} from '@/api'
 
   export default {
     name: 'App',
+    created () {
+
+    },
+    methods: {
+      async _getSeller () {
+        let res = await getSeller()
+        console.log(res)
+      }
+    },
     components: {
       vHeader
     }
@@ -32,7 +42,8 @@
       width: 100%
       height: 40px
       align-items: center
-      border-1px(rgba(7,17,27,0.1))
+      border-1px(rgba(7, 17, 27, 0.1))
+
       &-item
         display: flex
         align-items: center
