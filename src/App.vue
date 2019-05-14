@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-header></v-header>
+    <v-header :seller="seller"></v-header>
     <div class="tab border-1px">
       <router-link class="tab-item" to="/goods" active-class="active">商品</router-link>
       <router-link class="tab-item" to="ratings" active-class="active">评论</router-link>
@@ -18,13 +18,17 @@
 
   export default {
     name: 'App',
+    data () {
+      return {
+        seller: {}
+      }
+    },
     created () {
       this._getSeller()
     },
     methods: {
       async _getSeller () {
-        let res = await getSeller()
-        console.log(res)
+        this.seller = await getSeller()
       }
     },
     components: {
